@@ -36,7 +36,7 @@ function MessageBoard() {
       <div class="board">
         { message.map((item,index)=>{
           return (
-            <div className="message">
+            <div className="message" key={index}>
               <h1>{item}</h1>
               <button className="delete-button" onClick={()=>{
                 deleteMessage(index)
